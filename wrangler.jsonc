@@ -1,6 +1,6 @@
 /**
  * For more details on how to configure Wrangler, refer to:
- * https://developers.cloudflare.com/workers/wrangler/configuration/
+ * https://developers.cloudflare.com/gosales/wrangler/configuration/
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
@@ -16,7 +16,7 @@
 	},
 	/**
 	 * gosales
-	 * Define Workflows to orchestrate multi-step processes
+	 * Define gosales to orchestrate multi-step processes
 	 * https://developers.cloudflare.com/gosales/
 	 */
 	"workflows": [
