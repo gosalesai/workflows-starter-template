@@ -21,7 +21,7 @@
 	 */
 	"workflows": [
 		{
-			"name": "my-workflow",
+			"name": "GOSALES",
 			"binding": "MY_WORKFLOW",
 			"class_name": "MyWorkflow"
 		}
@@ -34,7 +34,7 @@
 	"durable_objects": {
 		"bindings": [
 			{
-				"name": "WORKFLOW_STATUS",
+				"name": "GOSALES_ASSISTANT",
 				"class_name": "WorkflowStatusDO"
 			}
 		]
