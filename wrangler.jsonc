@@ -5,7 +5,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "gosales-assistant-ai",
-	"main": "worker/index.ts",
+	"main": "gosales/index.ts",
 	"compatibility_date": "2025-10-08",
 	"assets": {
 		"directory": "./dist",
@@ -15,15 +15,15 @@
 		"enabled": true
 	},
 	/**
-	 * Workflows
+	 * gosales
 	 * Define Workflows to orchestrate multi-step processes
-	 * https://developers.cloudflare.com/workflows/
+	 * https://developers.cloudflare.com/gosales/
 	 */
 	"workflows": [
 		{
 			"name": "GOSALES",
-			"binding": "MY_WORKFLOW",
-			"class_name": "MyWorkflow"
+			"binding": "gosales",
+			"class_name": "gosales"
 		}
 	],
 	/**
@@ -35,7 +35,7 @@
 		"bindings": [
 			{
 				"name": "GOSALES_ASSISTANT",
-				"class_name": "WorkflowStatusDO"
+				"class_name": "GosalesAssistant"
 			}
 		]
 	},
@@ -46,7 +46,7 @@
 	"migrations": [
 		{
 			"tag": "v1",
-			"new_sqlite_classes": ["WorkflowStatusDO"]
+			"new_sqlite_classes": ["GosalesAssistant"]
 		}
 	],
 	"upload_source_maps": true
